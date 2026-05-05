@@ -9,6 +9,7 @@ def excel_to_pdf(input_file, output_file):
     class MyPDF(FPDF):
         def header(self):
             if self.page_no() == 1:
+                self.image("logo.png", x=10, y=6, w=20)
                 self.set_font("Helvetica", style="B", size=18)
                 self.cell(277,7, text="Automation Lab",align="CENTER", new_x="LMARGIN", new_y="NEXT")
                 self.set_font("Helvetica", style="B", size=12)
@@ -39,4 +40,4 @@ if __name__ == "__main__":
     # a = str(input("Enter Input file name(with.xlsx): "))
     # b = str(input("Enter Output file name(with.pdf): "))
     # excel_to_pdf(a,b)
-    excel_to_pdf("output.xlsx", "pdf_maker.pdf")
+    excel_to_pdf("output.xlsx", "Test.pdf")

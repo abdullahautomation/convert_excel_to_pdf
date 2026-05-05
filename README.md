@@ -8,7 +8,8 @@ Built with **Python**, **Pandas**, **fpdf2**, and **Tkinter**.
 
 ## 🖥️ GUI Preview
 
-![PDF Maker GUI](screenshot.png)
+![PDF Maker GUI](screenshots/s1.png)
+![PDF Screenshot](screenshots/s2.png)
 
 ---
 
